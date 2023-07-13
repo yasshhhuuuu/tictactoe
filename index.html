@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TIC TAC TOE </title>
+    <script src="app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<script>
+    localStorage.setItem("y", 1);
+    localStorage.setItem("a", 0);
+    localStorage.setItem("b", 0);
+    localStorage.setItem("c", 0);
+    localStorage.setItem("d", 0);
+    localStorage.setItem("e", 0);
+    localStorage.setItem("f", 0);
+    localStorage.setItem("g", 0);
+    localStorage.setItem("h", 0);
+    localStorage.setItem("i", 0);
+</script>
+<body>
+    <div class = "container text-center mt-4" style="width: 30%;">
+        <h1> TIC TAC TOE </h1>
+        <input type="text" class="form-control mt-2" id="p1" placeholder="player 1 ('O')">
+        <input type="text" class="form-control mt-2" id="p2" placeholder="player 2 ('X')">
+        <table class = "mt-4" style="margin-left: 130px;">
+            <tr>
+                <td><button type="button" class="btn btn-outline-info" id="1" onclick="myfunc(this.id)">-</button></td>
+                <td><button type="button" class="btn btn-outline-info" id="2" onclick="myfunc(this.id)">-</button></td>
+                <td><button type="button" class="btn btn-outline-info" id="3" onclick="myfunc(this.id)">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="btn btn-outline-info" id="4" onclick="myfunc(this.id)">-</button></td>
+                <td><button type="button" class="btn btn-outline-info" id="5" onclick="myfunc(this.id)">-</button></td>
+                <td><button type="button" class="btn btn-outline-info" id="6" onclick="myfunc(this.id)">-</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" class="btn btn-outline-info" id="7" onclick="myfunc(this.id)">-</button></td>
+                <td><button type="button" class="btn btn-outline-info" id="8" onclick="myfunc(this.id)">-</button></td>
+                <td><button type="button" class="btn btn-outline-info" id="9" onclick="myfunc(this.id)">-</button></td>
+            </tr>
+        </table>
+        <div id="result"></div>
+    </div>
+    <div class = "text-center mt-4" style="width: 100%;">
+        <button type="button" class="btn btn-outline-warning" onClick="window.location.reload();">NEW GAME</button>    
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
